@@ -9,12 +9,10 @@
   <p>
     <?php
 
-    function sort_2way($order) {
+    function sort_2way($order,$nums) {
       if ($order === true) {
        echo "昇順にソートします。<br>";
 
-       // ソートする配列を宣言
-    $nums = array(15, 4, 18, 23, 10 );
     sort($nums);
 
     foreach ($nums as $num) {
@@ -22,11 +20,9 @@
     }
     }
 
-      else{ 
-      echo "降順にソートします。<br>";
+    else{ 
+    echo "降順にソートします。<br>";
 
-          // ソートする配列を宣言
-    $nums = array(15, 4, 18, 23, 10 );
     rsort($nums);
 
     foreach ($nums as $num) {
@@ -35,9 +31,12 @@
     }
     }
 
+  // ソートする配列を宣言
+  $nums = array(15, 4, 18, 23, 10 );
+
     // 関数の呼び出し
-    sort_2way(true);
-    sort_2way(false);
+    sort_2way(true, $nums);
+    sort_2way(false, $nums);
 
     
     ?>
