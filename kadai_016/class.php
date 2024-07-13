@@ -15,9 +15,9 @@
       private $price;
 
       // メソッドを定義する
-      public function set_price(string $price) {
-        $this->price = $price;
-      }
+      // public function set_price(string $price) {
+      //   $this->price = $price;
+      // }
 
       public function show_price() {
         echo $this->price . "<br>";
@@ -47,9 +47,9 @@ class Animal {
   private $weight;
 
   // メソッドを定義する
-  public function set_height(int $height) {
-    $this->height = $height;
-  }
+  // public function set_height(int $height) {
+  //   $this->height = $height;
+  // }
 
   public function show_height() {
     echo $this->height . "<br>";
@@ -73,11 +73,11 @@ print_r($animal);
 echo "<br>";
 
 // $foodメソッドにアクセスして値の代入を実行する
-$food->set_price(250);
+// $food->set_price(250);
 $food->show_price();
 
 // $animalメソッドにアクセスして値の代入を実行する
-$animal->set_height(60);
+// $animal->set_height(60);
 $animal->show_height();
 
 ?>
